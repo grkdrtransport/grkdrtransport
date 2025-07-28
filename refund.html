@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Refund & Cancellation Policy – GR & KDR Transport</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.75;
+    }
+
+    header {
+      background: linear-gradient(90deg, #6a1b9a, #8e24aa);
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+      animation: fadeInDown 1s ease-out;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffeb3b;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+      animation: fadeInUp 1s ease-out;
+    }
+
+    .container h2 {
+      color: #6a1b9a;
+      font-size: 1.5rem;
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .container p {
+      margin-bottom: 1.2rem;
+      font-size: 1.05rem;
+    }
+
+    a {
+      color: #6a1b9a;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background-color: #4A148C;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+
+      nav a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+
+      .container {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Refund & Cancellation Policy</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="terms.html">Terms</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="refund.html">Refund</a>
+      <a href="shipping.html">Shipping</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <p>
+      At GR & KDR Transport, we strive to deliver dependable and customer-friendly services. Our refund and cancellation policy is designed to ensure clarity and fairness for all users of our platform.
+    </p>
+
+    <h2>1. Cancellations by Customers</h2>
+    <p>
+      Customers may cancel a booking at any time before the driver reaches the pickup location. However, if the driver is already en route or has arrived, a nominal cancellation fee may be applied to compensate for time and fuel costs.
+    </p>
+
+    <h2>2. Refund Policy</h2>
+    <p>
+      In cases where a booking has been pre-paid and subsequently canceled, a refund will be processed after deducting any applicable cancellation charges. Refunds are typically issued within 5–7 business days to the original payment method.
+    </p>
+
+    <h2>3. Driver-Initiated Cancellations</h2>
+    <p>
+      If a driver cancels a booking, customers will be notified promptly, and any pre-paid amount will be fully refunded without deductions.
+    </p>
+
+    <h2>4. How to Request a Refund</h2>
+    <p>
+      To initiate a refund request, please <a href="contact.html">contact our support team</a> with your booking reference number and reason for cancellation. Our team will review your request and respond within 48 hours.
+    </p>
+  </div>
+
+  <footer>
+    <p>&copy; <span id="year"></span> GR & KDR Transport. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>

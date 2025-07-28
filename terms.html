@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Terms & Conditions – GR & KDR Transport</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.75;
+    }
+
+    header {
+      background: linear-gradient(90deg, #6a1b9a, #8e24aa);
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+      animation: fadeInDown 1s ease-out;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffeb3b;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+      animation: fadeInUp 1s ease-out;
+    }
+
+    .container h2 {
+      color: #6a1b9a;
+      font-size: 1.5rem;
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .container p {
+      margin-bottom: 1.2rem;
+      font-size: 1.05rem;
+    }
+
+    footer {
+      background-color: #4A148C;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+
+      nav a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+
+      .container {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Terms & Conditions</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="terms.html">Terms</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="refund.html">Refund</a>
+      <a href="shipping.html">Shipping</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>1. Acceptance of Terms</h2>
+    <p>
+      By accessing and using the GR & KDR Transport mobile application or website, you agree to comply with and be bound by these Terms and Conditions. If you do not agree to these terms, you must refrain from using our services.
+    </p>
+
+    <h2>2. Nature of Service</h2>
+    <p>
+      GR & KDR Transport provides a digital platform connecting customers with independent load vehicle drivers for intra-city transportation of goods. We do not own or operate the vehicles. All drivers are independent service providers operating at their own discretion.
+    </p>
+
+    <h2>3. User Responsibilities</h2>
+    <p>
+      Users are responsible for providing accurate pickup and delivery information, ensuring goods are legally permissible to transport, and completing payment as per the app’s calculation. Any unlawful activity or misuse of the platform may result in service denial.
+    </p>
+
+    <h2>4. Driver Commission</h2>
+    <p>
+      Drivers registered on the platform agree to a commission of 10–15% of the fare amount per completed trip. The commission is automatically deducted during digital payments made through the application.
+    </p>
+
+    <h2>5. Limitations of Liability</h2>
+    <p>
+      GR & KDR Transport shall not be liable for any loss, damage, or delay of goods during transit. The maximum liability, in any dispute, shall not exceed the amount paid by the customer for the specific trip in question.
+    </p>
+
+    <h2>6. Modifications</h2>
+    <p>
+      We reserve the right to modify these terms at any time without prior notice. Continued use of the platform after such modifications constitutes acceptance of the updated terms.
+    </p>
+
+    <h2>7. Governing Law</h2>
+    <p>
+      These terms shall be governed in accordance with the laws of India. Any disputes or legal proceedings shall be subject to the jurisdiction of the courts located in Mayiladuthurai, Tamil Nadu.
+    </p>
+  </div>
+
+  <footer>
+    <p>&copy; <span id="year"></span> GR & KDR Transport. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>

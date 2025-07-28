@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us – GR & KDR Transport</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.75;
+    }
+
+    header {
+      background: linear-gradient(90deg, #6a1b9a, #8e24aa);
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+      animation: fadeInDown 1s ease-out;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffeb3b;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+      animation: fadeInUp 1s ease-out;
+    }
+
+    h2 {
+      color: #6a1b9a;
+      font-size: 1.6rem;
+      margin-top: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    p {
+      margin-bottom: 1rem;
+      font-size: 1.05rem;
+    }
+
+    address {
+      font-style: normal;
+      line-height: 1.8;
+      font-size: 1.05rem;
+    }
+
+    a {
+      color: #6a1b9a;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .social {
+      margin-top: 1rem;
+    }
+
+    .social a {
+      display: inline-block;
+      margin-right: 1rem;
+      font-weight: 500;
+    }
+
+    footer {
+      background-color: #4A148C;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+
+      nav a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+
+      .container {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Contact Us</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="terms.html">Terms</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="refund.html">Refund</a>
+      <a href="shipping.html">Shipping</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h2>Get in Touch</h2>
+    <p>
+      If you have any questions, concerns, or feedback regarding our services, please contact us using the details below:
+    </p>
+
+    <address>
+      <strong>GR & KDR Transport</strong><br>
+      1A/23A, Hajiyar Nagar, Koorainadu<br>
+      Mayiladuthurai, Tamil Nadu, India<br>
+      <strong>Phone:</strong> <a href="tel:+918825796959">88257 96959</a><br>
+      <strong>Email:</strong> <a href="mailto:grkdrtransport@gmail.com">grkdrtransport@gmail.com</a>
+    </address>
+
+    <div class="social">
+      <p>Follow us on social media:</p>
+      <a href="#" target="_blank">Facebook</a>
+      <a href="#" target="_blank">Instagram</a>
+      <a href="#" target="_blank">WhatsApp</a>
+    </div>
+
+    <!-- Optional: Add a contact form below if needed -->
+    <!--
+    <form action="mailto:grkdrtransport@gmail.com" method="post" enctype="text/plain" style="margin-top: 2rem;">
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" style="width:100%; padding:0.5rem; margin-bottom:1rem;"><br>
+
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" style="width:100%; padding:0.5rem; margin-bottom:1rem;"><br>
+
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="5" style="width:100%; padding:0.5rem;"></textarea><br>
+
+      <button type="submit" style="margin-top:1rem; padding:0.7rem 1.5rem; background-color:#6a1b9a; color:white; border:none; border-radius:5px;">Send Message</button>
+    </form>
+    -->
+  </div>
+
+  <footer>
+    <p>&copy; <span id="year"></span> GR & KDR Transport. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>

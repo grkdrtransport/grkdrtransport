@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Privacy Policy – GR & KDR Transport</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      line-height: 1.75;
+    }
+
+    header {
+      background: linear-gradient(90deg, #6a1b9a, #8e24aa);
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+      animation: fadeInDown 1s ease-out;
+    }
+
+    header h1 {
+      font-size: 2.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    nav a {
+      color: #fff;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #ffeb3b;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 2rem auto;
+      padding: 0 1.5rem;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+      animation: fadeInUp 1s ease-out;
+    }
+
+    .container h2 {
+      color: #6a1b9a;
+      font-size: 1.5rem;
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .container p {
+      margin-bottom: 1.2rem;
+      font-size: 1.05rem;
+    }
+
+    a {
+      color: #6a1b9a;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      background-color: #4A148C;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 3rem;
+    }
+
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+
+      nav a {
+        display: block;
+        margin: 0.5rem 0;
+      }
+
+      .container {
+        padding: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Privacy Policy</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="terms.html">Terms</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="refund.html">Refund</a>
+      <a href="shipping.html">Shipping</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <p>This Privacy Policy outlines how GR & KDR Transport collects, uses, and protects your personal information when you use our mobile application or website.</p>
+
+    <h2>1. Information We Collect</h2>
+    <p>We may collect the following types of personal information: name, mobile number, email address, pickup and drop-off locations, payment information, and any additional data necessary to process and complete your transportation bookings.</p>
+
+    <h2>2. How We Use Your Information</h2>
+    <p>Your data is used for the following purposes:</p>
+    <ul style="margin-left: 1.5rem; list-style-type: disc;">
+      <li>To process bookings and facilitate transportation services</li>
+      <li>To communicate updates and confirmations regarding your trips</li>
+      <li>To improve our platform and enhance user experience</li>
+      <li>To comply with legal and regulatory requirements</li>
+      <li>To analyze service usage for business insights</li>
+    </ul>
+
+    <h2>3. Data Security</h2>
+    <p>We implement commercially reasonable measures to safeguard your information. However, please note that no method of transmission over the internet or method of electronic storage is completely secure.</p>
+
+    <h2>4. Sharing of Information</h2>
+    <p>We share your data only as required to provide our services, such as with drivers fulfilling your bookings. We do not sell or rent your personal information to third parties for marketing purposes.</p>
+
+    <h2>5. Your Rights</h2>
+    <p>You may request access to or correction of your personal data by contacting us. Subject to applicable laws, you may also request deletion of your account or opt out of marketing communications.</p>
+
+    <h2>6. Updates to This Policy</h2>
+    <p>We reserve the right to update this policy from time to time. Any changes will be posted on this page with an updated revision date.</p>
+
+    <h2>7. Contact Us</h2>
+    <p>If you have any questions or concerns about this Privacy Policy or the handling of your data, please <a href="contact.html">contact us</a>.</p>
+  </div>
+
+  <footer>
+    <p>&copy; <span id="year"></span> GR & KDR Transport. All rights reserved.</p>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>

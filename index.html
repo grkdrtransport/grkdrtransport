@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GR & KDR Transport</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(90deg, #6a1b9a, #8e24aa);
+            color: white;
+            padding: 2rem 1rem;
+            text-align: center;
+            animation: fadeInDown 1s ease-out;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffeb3b;
+        }
+
+        .hero {
+            background: url('https://images.unsplash.com/photo-1611132345265-35e51fa5794a?auto=format&fit=crop&w=1350&q=80') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+            font-size: 2rem;
+            font-weight: 700;
+            text-align: center;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        h2 {
+            color: #6a1b9a;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        h3 {
+            margin-top: 2rem;
+            color: #333;
+        }
+
+        p, ul {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+
+        ul {
+            padding-left: 1.5rem;
+        }
+
+        ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        a {
+            color: #6a1b9a;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        section#fleet {
+            background: #fff;
+            padding: 2rem 1rem;
+            text-align: center;
+        }
+
+        section#fleet img {
+            width: 100%;
+            max-width: 800px;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+        }
+
+        footer {
+            background-color: #4A148C;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .hero {
+                font-size: 1.5rem;
+                height: 250px;
+            }
+
+            nav a {
+                display: block;
+                margin: 0.5rem 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>GR & KDR Transport</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="terms.html">Terms</a>
+            <a href="privacy.html">Privacy</a>
+            <a href="refund.html">Refund</a>
+            <a href="shipping.html">Shipping</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="hero">
+        Reliable Local Transport for Your Goods in Mayiladuthurai
+    </div>
+
+    <div class="container">
+        <h2>Welcome to GR & KDR Transport</h2>
+        <p>We provide fast, reliable Tata ACE goods transport services in Mayiladuthurai, Tamil Nadu. Book a vehicle, track your driver, and pay securely – all from our mobile app.</p>
+
+        <p>Our services are designed for convenience and safety, with vetted drivers and real-time support.</p>
+
+        <h3>Pricing (in INR)</h3>
+        <ul>
+            <li>Base Fare: ₹200</li>
+            <li>Per Kilometre: ₹50</li>
+            <li>Per Minute (after 30 min wait): ₹50</li>
+        </ul>
+
+        <p>Before using our service, please review:</p>
+        <ul>
+            <li><a href="terms.html">Terms & Conditions</a></li>
+            <li><a href="privacy.html">Privacy Policy</a></li>
+            <li><a href="refund.html">Refund & Cancellation Policy</a></li>
+            <li><a href="shipping.html">Shipping (Delivery) Policy</a></li>
+        </ul>
+    </div>
+
+    <section id="fleet">
+        <h2>Our Fleet</h2>
+        <p>Reliable Tata ACE vehicles equipped for safe and efficient delivery of your goods.</p>
+        <div style="max-width: 900px; margin: auto; animation: fadeInUp 1.5s ease-out;">
+            <img src="ACE GOLD Diesel HT+ - 01_2.png" alt="Tata ACE loaded with goods">
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; <span id="year"></span> GR & KDR Transport. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+    </script>
+
+</body>
+</html>
